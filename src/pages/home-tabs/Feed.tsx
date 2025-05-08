@@ -20,7 +20,7 @@ const Feed: React.FC = () => {
           <IonTitle>Feed</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent className="ion-padding">
         <FeedContainer />
       </IonContent>
     </IonPage>

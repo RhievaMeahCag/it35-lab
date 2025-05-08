@@ -83,19 +83,23 @@ const Login: React.FC = () => {
           }}>USER LOGIN</h1>
           <IonInput
             label="Email" 
-            labelPlacement="floating" 
+            labelPlacement="stacked" 
             fill="outline"
             type="email"
             placeholder="Enter Email"
             value={email}
-            onIonChange={e => setEmail(e.detail.value!)}
+            onIonInput={e => setEmail(e.detail.value!)}
+            style={{ marginTop: '15px' }}
           />
-          <IonInput style={{ marginTop:'10px' }}      
+          <IonInput
+            label="Password"
+            labelPlacement="stacked"
             fill="outline"
             type="password"
             placeholder="Password"
             value={password}
-            onIonChange={e => setPassword(e.detail.value!)}
+            onIonInput={e => setPassword(e.detail.value!)}
+            style={{ marginTop: '15px' }}
           >
             <IonInputPasswordToggle slot="end"></IonInputPasswordToggle>
           </IonInput>

@@ -106,14 +106,68 @@ const Register: React.FC = () => {
             <IonContent className='ion-padding'>
                 <h1>Create your account</h1>
 
-                <IonInput label="Username" labelPlacement="stacked" fill="outline" type="text" placeholder="Enter a unique username" value={username} onIonChange={e => setUsername(e.detail.value!)} style={{ marginTop: '15px' }} />
-                <IonInput label="First Name" labelPlacement="stacked" fill="outline" type="text" placeholder="Enter your first name" value={firstName} onIonChange={e => setFirstName(e.detail.value!)} style={{ marginTop: '15px' }} />
-                <IonInput label="Last Name" labelPlacement="stacked" fill="outline" type="text" placeholder="Enter your last name" value={lastName} onIonChange={e => setLastName(e.detail.value!)} style={{ marginTop: '15px' }} />
-                <IonInput label="Email" labelPlacement="stacked" fill="outline" type="email" placeholder="youremail@nbsc.edu.ph" value={email} onIonChange={e => setEmail(e.detail.value!)} style={{ marginTop: '15px' }} />
-                <IonInput label="Password" labelPlacement="stacked" fill="outline" type="password" placeholder="Enter password" value={password} onIonChange={e => setPassword(e.detail.value!)} style={{ marginTop: '15px' }} >
+                <IonInput 
+                    label="Username" 
+                    labelPlacement="stacked" 
+                    fill="outline" 
+                    type="text" 
+                    placeholder="Enter a unique username" 
+                    value={username} 
+                    onIonInput={e => setUsername(e.detail.value!)} 
+                    style={{ marginTop: '15px' }} 
+                />
+                <IonInput 
+                    label="First Name" 
+                    labelPlacement="stacked" 
+                    fill="outline" 
+                    type="text" 
+                    placeholder="Enter your first name" 
+                    value={firstName} 
+                    onIonInput={e => setFirstName(e.detail.value!)} 
+                    style={{ marginTop: '15px' }} 
+                />
+                <IonInput 
+                    label="Last Name" 
+                    labelPlacement="stacked" 
+                    fill="outline" 
+                    type="text" 
+                    placeholder="Enter your last name" 
+                    value={lastName} 
+                    onIonInput={e => setLastName(e.detail.value!)} 
+                    style={{ marginTop: '15px' }} 
+                />
+                <IonInput 
+                    label="Email" 
+                    labelPlacement="stacked" 
+                    fill="outline" 
+                    type="email" 
+                    placeholder="youremail@nbsc.edu.ph" 
+                    value={email} 
+                    onIonInput={e => setEmail(e.detail.value!)} 
+                    style={{ marginTop: '15px' }} 
+                />
+                <IonInput 
+                    label="Password" 
+                    labelPlacement="stacked" 
+                    fill="outline" 
+                    type="password" 
+                    placeholder="Enter password" 
+                    value={password} 
+                    onIonInput={e => setPassword(e.detail.value!)} 
+                    style={{ marginTop: '15px' }} 
+                >
                     <IonInputPasswordToggle slot="end" />
                 </IonInput>
-                <IonInput label="Confirm Password" labelPlacement="stacked" fill="outline" type="password" placeholder="Confirm password" value={confirmPassword} onIonChange={e => setConfirmPassword(e.detail.value!)} style={{ marginTop: '15px' }} >
+                <IonInput 
+                    label="Confirm Password" 
+                    labelPlacement="stacked" 
+                    fill="outline" 
+                    type="password" 
+                    placeholder="Confirm password" 
+                    value={confirmPassword} 
+                    onIonInput={e => setConfirmPassword(e.detail.value!)} 
+                    style={{ marginTop: '15px' }} 
+                >
                     <IonInputPasswordToggle slot="end" />
                 </IonInput>
 

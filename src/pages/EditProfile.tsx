@@ -212,11 +212,11 @@ const EditAccount: React.FC = () => {
                 <IonInput
                   label="Username"
                   type="text"
-                  labelPlacement="floating"
+                  labelPlacement="stacked"
                   fill="outline"
                   placeholder="Enter username"
                   value={username}
-                  onIonChange={(e) => setUsername(e.detail.value!)}
+                  onIonInput={(e) => setUsername(e.detail.value!)}
                 />
               </IonCol>
             </IonRow>
@@ -225,22 +225,22 @@ const EditAccount: React.FC = () => {
                 <IonInput
                   label="First Name"
                   type="text"
-                  labelPlacement="floating"
+                  labelPlacement="stacked"
                   fill="outline"
                   placeholder="Enter First Name"
                   value={firstName}
-                  onIonChange={(e) => setFirstName(e.detail.value!)}
+                  onIonInput={(e) => setFirstName(e.detail.value!)}
                 />
               </IonCol>
               <IonCol size="6">
                 <IonInput
                   label="Last Name"
                   type="text"
-                  labelPlacement="floating"
+                  labelPlacement="stacked"
                   fill="outline"
                   placeholder="Enter Last Name"
                   value={lastName}
-                  onIonChange={(e) => setLastName(e.detail.value!)}
+                  onIonInput={(e) => setLastName(e.detail.value!)}
                 />
               </IonCol>
             </IonRow>
@@ -254,11 +254,11 @@ const EditAccount: React.FC = () => {
                 <IonInput
                   label="New Password"
                   type="password"
-                  labelPlacement="floating"
+                  labelPlacement="stacked"
                   fill="outline"
                   placeholder="Enter New Password"
                   value={password}
-                  onIonChange={(e) => setPassword(e.detail.value!)}
+                  onIonInput={(e) => setPassword(e.detail.value!)}
                 >
                   <IonInputPasswordToggle slot="end" />
                 </IonInput>
@@ -272,11 +272,11 @@ const EditAccount: React.FC = () => {
                 <IonInput
                   label="Confirm Password"
                   type="password"
-                  labelPlacement="floating"
+                  labelPlacement="stacked"
                   fill="outline"
                   placeholder="Confirm New Password"
                   value={confirmPassword}
-                  onIonChange={(e) => setConfirmPassword(e.detail.value!)}
+                  onIonInput={(e) => setConfirmPassword(e.detail.value!)}
                 >
                   <IonInputPasswordToggle slot="end" />
                 </IonInput>
@@ -295,11 +295,11 @@ const EditAccount: React.FC = () => {
                 <IonInput
                   label="Current Password"
                   type="password"
-                  labelPlacement="floating"
+                  labelPlacement="stacked"
                   fill="outline"
-                  placeholder="Enter Current Password to Save Changess"
+                  placeholder="Enter Current Password to Save Changes"
                   value={currentPassword}
-                  onIonChange={(e) => setCurrentPassword(e.detail.value!)}
+                  onIonInput={(e) => setCurrentPassword(e.detail.value!)}
                 >
                 <IonInputPasswordToggle slot="end" />
                 </IonInput>
